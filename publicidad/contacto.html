@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=PT+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main id="contacto">
+        <div id="orden">
+            <h1>AQUÍ TOMAREMOS SU ORDEN</h1>
+        </div>
+        <form action="#">
+            <!-----------Ingreso de un texto---------->
+            <div class="inputs">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+            </div >
+            <!--Password-->
+            <div class="inputs"> 
+
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" name="clave">
+            </div>
+            <!--email-->
+            <div class="inputs">
+                  <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            </div>
+          
+            <!--Numero-->
+            <div class="inputs">
+                <label for="number">Numero</label>
+            <input type="number" id="number" name="number">
+            </div>
+            
+            <!--fecha-->
+            <div class="inputs">
+                <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+            </div>
+            
+            <!--tildar valores/caja de verificacion-->
+            <div class="comida">
+                <label for="chk-milanesa">Milanesa</label>
+                <input type="checkbox" id="chk-milanesa" name="chk-milanesa" value="milanesa" class="checkbox">
+                <label for="chk-pizza">Pizza</label>
+                <input type="checkbox" id="chk-pizza" name="chk-pizza" value="pizza" class="checkbox"> 
+                <label for="chk-asado">Asado</label>
+                <input type="checkbox" id="chk-asado" name="chk-asado" value="asado" class="checkbox">
+            </div>
+            
+            <!--radio - perimten seleccionar una opcion-->
+            <div class="comida">
+                <label for="equipo-river">River</label>
+                <input type="radio"  name="equipos" id="equipo-river" value="River" class="checkbox">
+                <label for="equipo-velez">Velez</label>
+                <input type="radio"  name="equipos" id="equipo-velez" value="Velez" class="checkbox">
+            </div>
+            
+            <!-- boton -->
+            <div class="inputs">
+                <input type="button" name="suscribite" id="boton" value="Ingresar" class="boton">
+            </div>
+
+
+
+
+        </form>
+    </main>
+</body>
+</html>

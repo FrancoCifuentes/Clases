@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Oleo+Script&family=PT+Sans&family=Playfair+Display:wght@600&family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Oleo+Script&family=PT+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizzeria</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 id="main-title">
+                <img id="logo" class="imagen" src="assets/img/logo.jpg" alt=""> Space's Pizza
+            </h1>
+        </div>
+        
+        <nav>
+            <ul id="menu">
+                <li>
+                    <span class="material-symbols-outlined">home</span>Home
+                </li>
+                <li>
+                    <span class="material-symbols-rounded">storefront</span>Productos
+                </li>
+                <li>
+                    <span class="material-symbols-rounded">call</span>Teléfono
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <fieldset class="fieldset">
+            <legend>Datos de Cliente</legend>
+            <input type="text" name="nombre" id="nombre" class="texto" placeholder="Ingrese su Nombre">
+            <input type="text" name="apellido" id="apellido" class="texto" placeholder="Ingrese su Apellido">
+            <input type="email" name="email" id="email" class="texto" placeholder="Email">
+
+            <input type="text" name="telefono" id="telefono" class="texto" placeholder="Teléfono">
+            <input type="text" name="codpostal" id="codpostal" class="texto" placeholder="#Codigo Postal">            
+            <input type="text" name="direccion" id="direccion" class="texto" placeholder="Dirección">
+        </fieldset>
+
+        <fieldset id="orden" class="fieldset">
+            <legend>Datos de Orden </legend>
+            <input type="number" name="cantidad" id="cantidad" class="texto" placeholder="Unidades" min="0" max="4">
+            <div id="div1">
+                <label for="chica">Chica</label>
+                <input type="radio" name="chica" id="chica" class="texto1">
+                <label for="grande">Grande</label>
+                <input type="radio" name="grande" id="grande" class="texto1">
+
+                <select class="texto" name="pizzas" id="pizzas1">
+                    <option value="muza">Muzarella</option>
+                    <option value="nap">Napolitana</option>
+                    <option value="esp">Especial</option>
+                    <option value="fug">Fugazzeta</option> 
+                    <option value="none">Nada</option>       
+                </select>
+
+                <select class="texto"name="pizzas" id="pizzas2">
+                    <option value="muza">Muzarella</option>
+                    <option value="nap">Napolitana</option>
+                    <option value="esp">Especial</option>
+                    <option value="fug">Fugazzeta</option> 
+                    <option value="none">Nada</option>       
+                </select>
+
+                <select class="texto" name="pizzas" id="pizzas3">
+                    <option value="muza">Muzarella</option>
+                    <option value="nap">Napolitana</option>
+                    <option value="esp">Especial</option>
+                    <option value="fug">Fugazzeta</option> 
+                    <option value="none">Nada</option>       
+                </select>
+
+                <select class="texto" name="pizzas" id="pizzas4">
+                    <option value="muza">Muzarella</option>
+                    <option value="nap">Napolitana</option>
+                    <option value="esp">Especial</option>
+                    <option value="fug">Fugazzeta</option> 
+                    <option value="none">Nada</option>       
+                </select>
+            </div>
+           
+            <fieldset class="fielset1"> 
+                <legend>Bebidas</legend>
+                <input type="number" name="cant-bebidas" id="cant-bebidas" class="texto" placeholder="Cantidad" min="0" max="8">
+                <select class="texto"name="bebidas" id="bebidas">
+                    <option id="coca" value="coca">Coca-Cola</option>
+                    <option id="Pepsi" value="Pepsi">Pepsi</option>
+                    <option id="7up" value="7up">7Up</option>
+                    <option id="jugo" value="jugo">Jugo de Naranja</option>
+                    <option id="cervlata" value="cervlata">Cerveza en Lata</option>
+                    <option id="cervbotella" value="cervbotella">Cerveza en Botella</option>
+                </select>
+
+                <fieldset class="fielset1">
+                <legend>Retiro</legend>
+                    <select class="texto" name="retiro" id="retiro">
+
+                    <option id="local" value="local">Local</option>
+                    <option id="delivery" value="delivery">Delivery</option>
+                
+                    </select>
+            
+                </fieldset>
+            </fieldset>
+
+        </fieldset>
+
+        
+
+            <div class="div-2"> 
+                 <input type="button" name="pedir" id="pedir" value="Pedir"class="boton">
+
+            </div>
+      
+            
+
+    </main>
+
+    <footer>
+       <div>
+           <h2> <img id="logo" src="assets/img/logo.jpg" alt=""> Space's Pizza </h2>
+        </div>
+        
+        <div >
+            <p>
+                <span class="material-symbols-rounded">pin_drop</span><a href="">Santa Rosa 145, Cipolletti</a>
+            </p>
+        
+            <p><span class="material-symbols-rounded">support_agent</span><a href=""> 0299 433-5674</a> </p>
+        </div>
+        
+        <div id="red-social">
+
+        </div>
+    </footer>
+</body>
+</html>
